@@ -10,8 +10,8 @@ export default {
         "menuBlue": "#023047",
         "primaryBlue": "#219ebc",
         "secondaryBlue": "#8ecae6",
-        "primaryOrange": "#fb8500",
-        "secondaryOrange": "#ffb703"
+        "primaryCream": "#fefae0",
+        "primaryOrange": "#ffb703"
       }
     },
   },

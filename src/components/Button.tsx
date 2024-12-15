@@ -18,7 +18,7 @@ const Button: React.FC<IButton> = ({ icon, color, size, text, displayMenu, borde
             <ul key={text} className="absolute left-0 top-full z-10 bg-secondaryBlue">
                 {displayMenu.map((item, index) => <li
                     key={`${text}-${item}-${index}`}
-                    className="border border-secondaryOrange text-sm py-1">
+                    className="border border-primaryOrange text-sm py-1">
                     {item}
                 </li>)}
             </ul>

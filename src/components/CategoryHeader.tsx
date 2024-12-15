@@ -65,12 +65,12 @@ const CategoryHeader = () => {
                 border
                 displayMenu={acessoryCategory}
             />
-            <div className="justify-self-end">
-            <Input
-                placeholder="O que você procura?"
-                icon={"material-symbols:search"}
+            <div className="ml-auto mr-2">
+                <Input
+                    placeholder="O que você procura?"
+                    icon={"material-symbols:search"}
                 />
-                </div>
+            </div>
         </nav>
     )
 }
