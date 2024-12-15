@@ -22,13 +22,20 @@ const Carousel = () => {
     }, [imagesPath.length])
 
     return (
-        <figure className={`relative w-[60vw] h-[70vh] mx-auto transition-opacity duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}>
+        <figure className={`relative w-[60vw] h-[70vh] group overflow-hidden mx-auto transition-opacity duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}>
             <img
                 src={imagesPath[index]}
                 alt={`carousel-image-${index}`}
                 key={index}
-                className="w-full h-full absolute top-0 left-0"
+                className="w-full h-full absolute top-0 inset-0"
             />
+            <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                <div className="w-[50%] h-[30%] bg-black/50 backdrop-blur-sm rounded-lg">
+                    <img
+                        src={"urban-aura.png"}
+                    />
+                </div>
+            </div>
         </figure>
     )
 }

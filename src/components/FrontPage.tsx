@@ -2,13 +2,11 @@ import Carousel from "./Carousel"
 import Catalog from "./Catalog"
 import CategoryHeader from "./CategoryHeader"
 import FlexWrapper from "./FlexWrapper"
-import Header from "./Header"
 import PageBody from "./PageBody"
 
 const FrontPage = () => {
     return (
         <section>
-            <Header />
             <CategoryHeader />
 
             <PageBody>
